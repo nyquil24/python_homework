@@ -131,7 +131,7 @@ def titleize(string):
         else: 
             new_string[i] =  string.lower()
 
-    return " ".join(string)         
+    return " ".join(new_string)         
 
 
 #Task 9
@@ -145,7 +145,7 @@ def hangman(secret, guess):
            hang.append(letter)
         else:
             hang.append("_") 
-    return hang         
+    return str(hang)
 
 #Task 10
 
