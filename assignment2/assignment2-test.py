@@ -69,5 +69,5 @@ def test_create_minutes_list():
 
 def test_write_sorted_list():
     sorted_list = a2.write_sorted_list()
-    assert sorted_list[0] == ("Jason Tucker","September 20, 1980")
     assert os.access("./minutes.csv", os.F_OK) == True
+    assert sorted_list[0] == ("Jason Tucker","September 20, 1980")
