@@ -1,0 +1,9 @@
+this string would be logged
+this string would be logged
+function:hellopositional parameters: nonekeyword parameters: nonereturn: None
+function:check_argspositional parameters: [46, 42, 23]keyword parameters: nonereturn: True
+function:check_decpositional parameters: nonekeyword parameters: {'name': 'June', 'day': '19'}return: <function logger_decorator at 0x10272d940>
+this string would be logged
+function:hellopositional parameters: nonekeyword parameters: nonereturn: None
+function:check_argspositional parameters: [46, 42, 23]keyword parameters: nonereturn: True
+function:check_decpositional parameters: nonekeyword parameters: {'name': 'June', 'day': '19'}return: <function logger_decorator at 0x10080d940>
