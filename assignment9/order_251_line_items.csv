@@ -1,0 +1,6 @@
+line_item_id,order_id,product_id,quantity,product_name,price
+1115,251,23,10,Bike,0.12
+1116,251,18,10,Shirt,0.23
+1117,251,43,10,Salad,0.53
+1118,251,9,10,Unbranded Wooden Keyboard,0.83
+1119,251,44,10,Practical Tuna,1.0

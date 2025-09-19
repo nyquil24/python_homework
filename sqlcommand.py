@@ -1,6 +1,6 @@
-import readline  # Provides command line editing and history
+import readline  # Provides command line editing and history  # noqa: F401
 import sqlite3   # For SQL command execution
-import sys
+import sys  # noqa: F401
 conn = sqlite3.connect("./db/lesson.db",isolation_level='IMMEDIATE')
 conn.execute("PRAGMA foreign_keys = 1")
 
