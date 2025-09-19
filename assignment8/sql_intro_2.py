@@ -1,20 +1,20 @@
+#%%
 import sqlite3
 import pandas as pd
-
-# Connect to the database
-conn = sqlite3.connect('../db/lesson.db')
-
-# Step 2: Read data into DataFrame with JOIN
+#%%
+with sqlite3.connect('../db/lesson.db') as conn:
+    conn.execute("PRAGMA foreign_key = 1")
+#%%
 sql_query = """
 SELECT line_items.line_item_id, line_items.quantity, line_items.product_id, 
        products.product_name, products.price
 FROM line_items
 JOIN products ON line_items.product_id = products.product_id
 """
-
+#%%
 df = pd.read_sql_query(sql_query, conn)
+#%%
 
-# Step 3: Print the first 5 lines
 print("Step 3 - First 5 lines of the DataFrame:")
 print(df.head())
 print()

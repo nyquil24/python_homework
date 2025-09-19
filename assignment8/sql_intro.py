@@ -1,7 +1,8 @@
 
 #%%
 import sqlite3 
-
+import pandas as pd
+#%%
 try:
     with sqlite3.connect("../db/magazines.db") as conn: 
         print("Database created and connected")
@@ -301,8 +302,4 @@ for row in current.fetchall():
 
 print("\nDatabase populated and queries executed successfully.")
 
-# %%
-with sqlite3.connect(db_path) as conn:
-    query = """ 
-    
-"""
+#%%
